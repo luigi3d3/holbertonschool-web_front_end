@@ -131,10 +131,10 @@ html {
     color: var(--section-title-color);
 }
 
-/* Ensure that the declaration targeting anchor elements only targets those containing a hyperlink */
-a[href]:not(.button) {
+    /* Ensure that the declaration targeting anchor elements only targets those containing a hyperlink */
+    a[href]:not(.button) {
     /* Your existing styles for anchor elements containing a hyperlink */
-  }
+    }
   
   /* Directly after this declaration, target the visited state for the link */
   a[href]:visited:not(.button) {
