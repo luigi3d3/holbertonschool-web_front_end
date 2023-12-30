@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
 }
 
-/* All fonts in the html element should be at 62.5% of their normal siz */
+/* All fonts in the html element should be at 62.5% of their normal size */
 html {
     font-size: 62.5%;
 }
