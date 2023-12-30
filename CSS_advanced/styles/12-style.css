@@ -1,0 +1,129 @@
+/* Target the root element and define custome properties */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color:var(--color-black);
+   
+    /* Targeting the root element, create 2 customes font-family properties */
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Targeting the root selector, create custom properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Targeting the root element, create custome properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Targeting the root element, update custome properties for font families */
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Targeting the root element, create custome properties for line height */
+    --line-height-small: 1,2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Create a new custom property section-header-align and set it to center */
+    --section-header-align: center;
+
+    /* Create a custome property section-tagline-transform and set it to uppercase */
+    --section-tagline-transform: uppercase;
+
+    /* New custome properties */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/* Revisist the section tagline and card category declaration amd resent their color to color-primary */
+.section-tagline,
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Revisit the body and anchor declarations and resent their color to text colour */
+body {
+
+    /* Revisit the body and anchor declaratiosn and reset their colour  to text colour */
+    color: var(--text-color);
+
+    /* Set colour to color primary */
+    color: var(--color-primary); 
+
+    /* Set body's font-family to font-family-base */
+    font-family: var(--font-family-base);
+
+    /* Set the boldness of fonts in the body to font-weight-regular */
+    font-weight: var(--font-weight-regular);
+
+    /* Any fonts in the body should have their sizes set to font-size-medium */
+    font-size: var(--font-size-medium);
+
+    /* Set the minimum height of lines boxes in the body t lines-height-base */
+    line-height: var(--line-height-base);
+
+}
+
+/* Set a colour from colour root */
+a {
+    /* Colour set from root element */
+    color: var(--text-color);
+    
+    /* Text decoration added */
+    text-decoration: none;
+}
+
+/* Create a new declaration targetting all 6 levels of heading tafs */
+h1, h2, h3, h4, h5, h6 {
+    /* Set its font-family to font-family-title */
+    font-family: var(--font-family-title);
+
+    /* Set the boldness of fonts in the headings to font weight-bold */
+    font-weight: var(--font-weight-bold);
+}
+
+/* All fonts in the html element should be at 62.5% of their normal size */
+html {
+    font-size: 62.5%;
+}
+
+/* Create a new declaration targeting the class section-header */
+.section-header {
+    /* Set horizontal alignment with section-header-align */
+    text-align: var(--section-header-align);
+}
+
+.section-tagline {
+    /* Set the family of fonts to font-family-title */
+    font-family: var(--font-family-title);
+
+    /* Transform the text using the property section-tagline-tansform */
+    text-transform: var(--section-tagline-transform);
+
+    /* Set the weight of fonts to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+}
+
+.section-title {
+    /* Set the family of fonts to font-family-title */
+    font-family: var(--font-family-title);
+
+    /* Set the font size to font-size-xx -large */
+    font-size: var(--font-size-xx-large);
+
+    /* Set the font weight to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+
+    /* Use the sectio-title-margin to set the margin */
+    margin: var(--section-title-margin);
+
+    /* Set the colour to section-title-colour */
+    color: var(--section-title-color);
+}
